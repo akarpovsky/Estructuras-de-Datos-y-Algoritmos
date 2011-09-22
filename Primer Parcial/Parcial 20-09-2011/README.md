@@ -16,7 +16,7 @@ el cual recibe una lista de valores de tipo T y debe retornar true en el caso de
 	
 # Ejercicio 2: Lístas Circulares
 
-##Se tiene la interfaz <strong>CircularList<T></strong> que modela una lista circular simplemente encadenada.
+####Se tiene la interfaz <strong>CircularList<T></strong> que modela una lista circular simplemente encadenada.
 	
 	public Interface CircularList<T>{
 		
