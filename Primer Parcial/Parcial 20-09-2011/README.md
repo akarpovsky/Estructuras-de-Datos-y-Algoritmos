@@ -16,15 +16,17 @@ el cual recibe una lista de valores de tipo T y debe retornar true en el caso de
 	
 # Ejercicio 2: Lístas Circulares
 
-Se tiene la interfaz <strong>CircularList<T></strong> que modela una lista circular simplemente encadenada.
+##Se tiene la interfaz <strong>CircularList<T></strong> que modela una lista circular simplemente encadenada.
 	
 	public Interface CircularList<T>{
 		
 		/* Recibe un objeto de tipo T y lo agrega al final de la lista */
+		
 		public void addLast(T value);
 		
 		/* Cada vez que es llamado, devuelve el siguiente elemento de la lista (como si fuera un iterador).
 		Si la lista está vacía, lanza una excepcion NoSuchElementException */
+		
 		public T getNext();
 		
 		/* Retorna una nueva lista que contiene los elementos desde el último que fue devuelto por getNext() 
@@ -32,6 +34,7 @@ Se tiene la interfaz <strong>CircularList<T></strong> que modela una lista circu
 		que van desde el primer elemento hasta el último devuelto por getNext() y el método devuelve una nueva 
 		lista con los restantes. En caso de invocarse a split() sin antes haber	llamado a getNext() lanza una 
 		excepción IllegalStateException */
+		
 		public CircularList<T> split();	
 	}
 	
