@@ -23,14 +23,15 @@ Se tiene la interfaz <strong>CircularList<T></strong> que modela una lista circu
 		/* Recibe un objeto de tipo T y lo agrega al final de la lista */
 		public void addLast(T value);
 		
-		/* Cada vez que es llamado, devuelve el siguiente elemento de la lista (como si fuera un iterador). Si la lista está vacía, lanza 
-		una excepcion NoSuchElementException */
+		/* Cada vez que es llamado, devuelve el siguiente elemento de la lista (como si fuera un iterador).
+		Si la lista está vacía, lanza una excepcion NoSuchElementException */
 		public T getNext();
 		
-		/* Retorna una nueva lista que contiene los elementos desde el último que fue devuelto por getNext() hasta el último elemento
-		de la lista. Es decir que la lista original (this) queda con los elementos que van desde el primer elemento hasta el último
-		devuelto por getNext() y el método devuelve una nueva lista con los restantes. En caso de invocarse a split() sin antes haber
-		llamado a getNext() lanza una excepción IllegalStateException */
+		/* Retorna una nueva lista que contiene los elementos desde el último que fue devuelto por getNext() 
+		hasta el último elemento de la lista. Es decir que la lista original (this) queda con los elementos 
+		que van desde el primer elemento hasta el último devuelto por getNext() y el método devuelve una nueva 
+		lista con los restantes. En caso de invocarse a split() sin antes haber	llamado a getNext() lanza una 
+		excepción IllegalStateException */
 		public CircularList<T> split();	
 	}
 	
